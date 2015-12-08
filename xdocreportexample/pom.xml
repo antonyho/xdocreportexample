@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.antonyho</groupId>
+  <artifactId>xdocreportexample</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>xdocreportexample</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- MS Word module (enable only when used) -->
+    <dependency>
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.document.docx</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+    
+    <!-- MS PowerPoint module (enable only when used) -->
+    <!-- 
+    <dependency>
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.document.pptx</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+     -->
+    
+    <!-- OpenOffice ODT module (enable only when used) -->
+    <dependency>
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.document.odt</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+    
+    <!-- Freemarker module (enable only when used) -->
+    <dependency>
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.template.freemarker</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+    
+    <!-- Freemarker module (enable only when used) -->
+    <!-- 
+    <dependency>
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.template.velocity</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+     -->
+    
+    <!-- docx converter engine (Choose 1 in 2) -->
+    <!-- docx 2 PDF/XHTML by using Apache POI + iText -->
+    <dependency>
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.converter.docx.xwpf</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+    
+    <!-- docx 2 PDF/XHTML by using docx4j + XSL-FO and FOP -->
+    <!-- 
+    <dependency>
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.converter.docx.docx4j</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+     -->
+    
+    <!-- odt converter engine -->
+    <dependency>
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.converter.odt.odfdom</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+    
+  </dependencies>
+</project>
