@@ -52,7 +52,7 @@
       <version>1.0.5</version>
     </dependency>
     
-    <!-- Freemarker module (enable only when used) -->
+    <!-- Velocity module (enable only when used) -->
     <!-- 
     <dependency>
       <groupId>fr.opensagres.xdocreport</groupId>
